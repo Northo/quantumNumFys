@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{graphicx}
+
+\newcommand{\del}[2]{\frac{\partial #1}{\partial #2}}  % Partial derivative
+\newcommand{\ddel}[2]{\frac{\partial^2 #1}{\partial #2^2}}  % Partial second derivative
+\newcommand{\deriv}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}  % Derivative
+\newcommand{\dderiv}[2]{\frac{\mathrm{d}^2 #1}{\mathrm{d} #2^2}}  % Second derivative
+
+\begin{document}
+\noindent\textbf{Task 2.2}\\
+Let $t = t' t_0$ and $x=x' x_0$.
+Setting $t_0 = L$ we getjj
+$$
+-\frac{\hbar^2}{2mL^2} \ddel{\Psi}{x'} = \frac{i\hbar}{t_0} \del{\Psi}{t'},
+$$
+and we see that setting $t_0 = \frac{2mL^2}{\hbar}$ gives us
+$$
+-\ddel{\Psi}{x'} = i \del{\Psi}{t'}.
+$$
+
+
+\noindent\textbf{Task 2.3}\\
+(2.7) therefor gives
+$$
+-\ddel{\psi_n}{x'} = \frac{E_n 2mL^2}{\hbar^2} \psi_n
+$$
+or
+$$
+\ddel{\psi_n}{x'} = \lambda_n \psi_n,
+$$
+where we defined
+$$
+\lambda_n = \frac{2mL^2}{\hbar^2} E_n.
+$$
+\end{document}
